@@ -1,1 +1,144 @@
-<mxfile host="app.diagrams.net" modified="2021-10-22T00:49:47.528Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" version="15.5.6" etag="G23-48uDUfeIu7qJwEcH" type="github"><diagram id="GnERMRoMEm5sITV8Tn_Z">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-22T01:04:00.240Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" etag="mfuihWXcm0T9OhEoOXkE" version="15.5.6" type="github">
+  <diagram id="GnERMRoMEm5sITV8Tn_Z" name="Page-1">
+    <mxGraphModel dx="1421" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FUGNfRzggGnHm_j06k2K-1" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-3" value="aggregation-center" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="100" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-12" value="设备列表+状态" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="200" as="sourcePoint" />
+            <mxPoint x="130" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-13" value="设备列表+状态" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="220" as="sourcePoint" />
+            <mxPoint x="130" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry x="45" y="260" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-15" value="聚合&lt;br&gt;t_deviceId&lt;br&gt;m_deviceId" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="FUGNfRzggGnHm_j06k2K-14" parent="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="240" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-23" value="状态查询" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="380" as="sourcePoint" />
+            <mxPoint x="130" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-24" value="状态查询" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="400" as="sourcePoint" />
+            <mxPoint x="130" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-28" value="设备控制" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="480" as="sourcePoint" />
+            <mxPoint x="130" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-29" value="设备控制" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-8">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="500" as="sourcePoint" />
+            <mxPoint x="130" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-4" value="天猫精灵/小度..." style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="100" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-31" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="FUGNfRzggGnHm_j06k2K-4">
+          <mxGeometry x="45" y="460" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-26" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="FUGNfRzggGnHm_j06k2K-4">
+          <mxGeometry x="45" y="360" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="FUGNfRzggGnHm_j06k2K-4">
+          <mxGeometry x="45" y="120" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-20" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="FUGNfRzggGnHm_j06k2K-4">
+          <mxGeometry x="45" y="180" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-9" value="授权认证(oauth2)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" target="FUGNfRzggGnHm_j06k2K-6">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="120" as="sourcePoint" />
+            <mxPoint x="130" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-10" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" source="FUGNfRzggGnHm_j06k2K-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="140" as="sourcePoint" />
+            <mxPoint x="50" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-11" value="设备发现(https: userId)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" target="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="180" as="sourcePoint" />
+            <mxPoint x="130" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-22" value="设备状态查询" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" target="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="360" as="sourcePoint" />
+            <mxPoint x="130" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-25" value="返回设备状态" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" source="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="420" as="sourcePoint" />
+            <mxPoint x="50" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-27" value="设备控制(https: key-value)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" target="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="460" as="sourcePoint" />
+            <mxPoint x="130" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-30" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="FUGNfRzggGnHm_j06k2K-4" source="FUGNfRzggGnHm_j06k2K-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="520" as="sourcePoint" />
+            <mxPoint x="50" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-5" value="语音控制" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" target="FUGNfRzggGnHm_j06k2K-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="80" y="160" as="sourcePoint" />
+            <mxPoint x="160" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-6" value="authorization-center" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="100" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-7" value="IoT Core" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="100" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-8" value="涂鸦" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="80" width="100" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FUGNfRzggGnHm_j06k2K-18" value="返回设备列表" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="FUGNfRzggGnHm_j06k2K-3" target="FUGNfRzggGnHm_j06k2K-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="400" as="sourcePoint" />
+            <mxPoint x="170" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
