@@ -1,1 +1,70 @@
-<mxfile host="app.diagrams.net" modified="2021-11-04T03:38:13.900Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4603.0 Safari/537.36" version="15.6.8" etag="ZinTciWDr06NuInBYPYw" type="github"><diagram id="P42ixX6_cICyWiymAhS4">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-04T03:49:25.314Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4603.0 Safari/537.36" etag="7xZhgXHhhEiPvFU-T7hX" version="15.6.8" type="github">
+  <diagram id="P42ixX6_cICyWiymAhS4" name="Page-1">
+    <mxGraphModel dx="1360" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-2" value="App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-6" value="获取连接mqtt认证信息&lt;br&gt;(https：token)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="jR3d20fJ6UsbWobjp9RS-2" target="jR3d20fJ6UsbWobjp9RS-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="100" as="sourcePoint" />
+            <mxPoint x="130" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-12" value="return（mqtt认证信息）" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="jR3d20fJ6UsbWobjp9RS-2" source="jR3d20fJ6UsbWobjp9RS-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="240" as="sourcePoint" />
+            <mxPoint x="50" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-3" value="acl-service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-7" value="查询用户设备列表(rpc)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="jR3d20fJ6UsbWobjp9RS-3" target="jR3d20fJ6UsbWobjp9RS-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="120" as="sourcePoint" />
+            <mxPoint x="130" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-8" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="jR3d20fJ6UsbWobjp9RS-3" source="jR3d20fJ6UsbWobjp9RS-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="140" as="sourcePoint" />
+            <mxPoint x="50" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-10" value="创建thingName、创建/关联证书、创建/关联策略" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="jR3d20fJ6UsbWobjp9RS-3" target="jR3d20fJ6UsbWobjp9RS-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="180" as="sourcePoint" />
+            <mxPoint x="130" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-11" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="jR3d20fJ6UsbWobjp9RS-3" source="jR3d20fJ6UsbWobjp9RS-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="200" as="sourcePoint" />
+            <mxPoint x="50" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-4" value="user-device-service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="120" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-5" value="登录" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" target="jR3d20fJ6UsbWobjp9RS-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="80" y="120" as="sourcePoint" />
+            <mxPoint x="160" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-9" value="aws iot core" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jR3d20fJ6UsbWobjp9RS-14" value="&lt;b&gt;PS：&lt;/b&gt;用户在绑定、解绑、分享设备、取消分享等，与设备关系发生变化时，&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;都需要到 aws iot core 更新用户策略，以限制用户可订阅+发布的topic&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="420" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
