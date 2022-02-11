@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-11T06:08:18.315Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4603.0 Safari/537.36" etag="rPIfl3GSd8-bUFzx-ja1" version="16.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-11T07:19:51.711Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4603.0 Safari/537.36" etag="y532re2i1_eYWWdRiJcj" version="16.2.7" type="github">
   <diagram id="He0-vwzjCSU_jYSfBKux" name="Page-1">
     <mxGraphModel dx="1588" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -51,6 +51,64 @@
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="120" y="200" as="sourcePoint" />
             <mxPoint x="290" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-28" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-29" value="控制台-service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="100" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-34" value="生成设备三元组&lt;br&gt;（productId，count）" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="w16aAkuPLHdIbEX43ScC-29" target="w16aAkuPLHdIbEX43ScC-31">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="120" as="sourcePoint" />
+            <mxPoint x="130" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-38" value="返回结果" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="w16aAkuPLHdIbEX43ScC-29" source="w16aAkuPLHdIbEX43ScC-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="240" as="sourcePoint" />
+            <mxPoint x="50" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="w16aAkuPLHdIbEX43ScC-29">
+          <mxGeometry x="45" y="280" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-40" value="下载" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="w16aAkuPLHdIbEX43ScC-39" parent="w16aAkuPLHdIbEX43ScC-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="260" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-31" value="acl-service（na）" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="100" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="w16aAkuPLHdIbEX43ScC-31">
+          <mxGeometry x="45" y="140" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-36" value="生成三元组信息并入库" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="w16aAkuPLHdIbEX43ScC-35" parent="w16aAkuPLHdIbEX43ScC-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="120" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-37" value="同步发布到其他区域" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="w16aAkuPLHdIbEX43ScC-31" target="w16aAkuPLHdIbEX43ScC-32">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="200" as="sourcePoint" />
+            <mxPoint x="130" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-32" value="acl-service&lt;br&gt;（other region）" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="100" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-33" value="生成设备三元组" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" target="w16aAkuPLHdIbEX43ScC-29">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="480" as="sourcePoint" />
+            <mxPoint x="200" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
