@@ -1,1 +1,59 @@
-<mxfile host="app.diagrams.net" modified="2022-02-11T03:02:46.979Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4603.0 Safari/537.36" version="16.2.7" etag="baqsWiYQ2nnvejqaS2ay" type="github"><diagram id="He0-vwzjCSU_jYSfBKux">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-02-11T06:08:18.315Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4603.0 Safari/537.36" etag="rPIfl3GSd8-bUFzx-ja1" version="16.2.7" type="github">
+  <diagram id="He0-vwzjCSU_jYSfBKux" name="Page-1">
+    <mxGraphModel dx="1588" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w16aAkuPLHdIbEX43ScC-15" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-16" value="控制台-service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="w16aAkuPLHdIbEX43ScC-16">
+          <mxGeometry x="45" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-23" value="遍历不同区域 IoT Core 发布接口" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="w16aAkuPLHdIbEX43ScC-22" parent="w16aAkuPLHdIbEX43ScC-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-26" value="发布&lt;br&gt;（开发/测试/预发/正式环境）" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="w16aAkuPLHdIbEX43ScC-16" target="w16aAkuPLHdIbEX43ScC-17">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="240" as="sourcePoint" />
+            <mxPoint x="130" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-17" value="IoT Core" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-18" value="创建&lt;br&gt;（产品/OTA/Panel/多语言等）" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" target="w16aAkuPLHdIbEX43ScC-16">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="120" as="sourcePoint" />
+            <mxPoint x="200" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="285" y="140" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-20" value="入库" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="w16aAkuPLHdIbEX43ScC-19" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="120" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="320" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w16aAkuPLHdIbEX43ScC-27" value="发布" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="120" y="200" as="sourcePoint" />
+            <mxPoint x="290" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
